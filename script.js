@@ -63,4 +63,5 @@ function finalResult() {
  console.log(playGame());
  console.log(finalResult());
 
+ hello everyone this is a test
 
