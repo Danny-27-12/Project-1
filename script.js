@@ -23,7 +23,7 @@ function playGame() {
     let computerChoice = getComputerChoice();
     let playerChoice = getPlayersChoice();
 
-    console.log(`Player's Choice: ${playerChoice} | Computer's Choice ${computerChoice}`);
+    console.log(`Player's Choice: ${playerChoice} | Computer's Choice: ${computerChoice}`);
 
     if (computerChoice === playerChoice) {
         console.log("It's a tie!");
@@ -53,14 +53,14 @@ function finalResult() {
         console.log('No one wins! Its a tie!');
     }
     else if (humanScore > computerScore){
-        console.log(`Player result: ${humanScore} | Computer result: ${computerScore} | Human wins!`);
+        console.log(`FINAL SCORES: Player result: ${humanScore} | Computer result: ${computerScore} - Human wins!`);
     }
     else if (computerScore > humanScore){
-        console.log(`Player result: ${humanScore} | Computer result: ${computerScore} | Computer wins!`);
+        console.log(`FINAL SCORES: Player result: ${humanScore} | Computer result: ${computerScore} - Computer wins!`);
     }
  }
 
-console.log(playGame());
-console.log(finalResult());
+ console.log(playGame());
+ console.log(finalResult());
 
 
