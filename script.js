@@ -7,7 +7,6 @@ function getComputerChoice() {
     let move = Math.floor(Math.random() * options.length);
     return options[move];
 }
-console.log(getComputerChoice());
 
 //Get player's choice
 
@@ -19,28 +18,27 @@ function getPlayersChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
-function checkWinner() {
-
+function playGame() {
+    for (let round = 1; round <= 5; round++) {
     let computerChoice = getComputerChoice();
     let playerChoice = getPlayersChoice();
-    console.log(playerChoice);
 
     if (computerChoice === playerChoice) {
-        return ("It's a tie!");
+        console.log("It's a tie!");
     } else if (computerChoice === 'rock' || playerChoice === 'paper') {
         humanScore ++
-        return ("Player wins, paper beats rock");
+        console.log ("Player wins, paper beats rock");
     } else if (computerChoice === 'scissors' || playerChoice === 'rock') {
         humanScore ++
-        return ("Player wins, rock beats scissors");
+        console.log ("Player wins, rock beats scissors");
     } else if (computerChoice === 'paper' || playerChoice === 'scissors') {
         humanScore ++
-        return ("Player wins, scissors beats paper");
+        console.log ("Player wins, scissors beats paper");
     } else {
         computerScore ++
-        return (`Computer wins, ${computerChoice} beats ${playerChoice}`);
+        console.log (`Computer wins, ${computerChoice} beats ${playerChoice}`);
     }
 }
+}
 
-console.log(checkWinner());
-
+console.log(playGame());
