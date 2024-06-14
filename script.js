@@ -38,6 +38,8 @@ function playGame() {
         computerScore ++
         console.log (`Computer wins, ${computerChoice} beats ${playerChoice}`);
     }
+
+    console.log (`These are the scores for both players: Player: ${humanScore} Computer ${computerScore}`);
 }
 }
 
