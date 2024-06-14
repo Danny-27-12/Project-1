@@ -12,19 +12,19 @@ console.log(getComputerChoice());
 //Get player's choice
 
 function getPlayersChoice() {
-    let choice = prompt('Please enter your go:');
+    let choice = window.prompt('Please enter your go:');
     return choice.toLowerCase();
 }
-
-console.log(getPlayersChoice());
-
-let computerChoice = getComputerChoice();
-let playerChoice = getPlayersChoice ();
 
 let humanScore = 0;
 let computerScore = 0;
 
 function checkWinner() {
+
+    let computerChoice = getComputerChoice();
+    let playerChoice = getPlayersChoice();
+    console.log(playerChoice);
+
     if (computerChoice === playerChoice) {
         return ("It's a tie!");
     } else if (computerChoice === 'rock' || playerChoice === 'paper') {
@@ -42,4 +42,5 @@ function checkWinner() {
     }
 }
 
-checkWinner();
+console.log(checkWinner());
+
