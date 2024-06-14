@@ -18,6 +18,8 @@ function getPlayersChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
+//Adding the UX to the game
+
 const choiceRock = document.querySelector('#rock');
 
 function choice() {
