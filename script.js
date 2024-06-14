@@ -17,3 +17,14 @@ function getPlayersChoice() {
 }
 
 console.log(getPlayersChoice());
+
+let computerChoice = getComputerChoice();
+let playerChoice = getPlayersChoice ();
+
+
+let humanScore = 0;
+let computerScore = 0;
+
+function checkWinner() {
+
+}
