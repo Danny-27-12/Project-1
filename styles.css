@@ -35,7 +35,7 @@ h2{
 #rps{
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    
    
 }
 
@@ -46,6 +46,7 @@ h2{
     margin-left: 20px;
     margin-right: 20px;
     padding: 25px 25px;
+    cursor: pointer;
 }
 
 #choices{
