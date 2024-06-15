@@ -27,6 +27,7 @@ const choiceScissors = document.querySelector('#scissors');
 
 function getPlayersChoice1() {
     let choice = choiceRock.addEventListener('click', getPlayersChoice1);
+    
     console.log('rock');
 }
 

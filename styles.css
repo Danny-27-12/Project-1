@@ -50,16 +50,43 @@ h2{
 }
 
 #choices{
-    margin: 50px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
+.displayScore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+#display1{
+    margin-left: 18px;
+}
+
+#display2{
+    margin-left: 18px;
+}
+
+#display3{
+    margin-left: 18px;
+}
+
+#display4{
+    margin-left: 18px;
+    font-size: 2em;
+    margin-top: 40px;
+}
 .score{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    
     
 }
 
@@ -68,6 +95,8 @@ h2{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    font-size: 2em;
+    margin-top: 40px;
+    
 }
 
