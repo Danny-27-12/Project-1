@@ -21,10 +21,27 @@ let computerScore = 0;
 //Adding the UX to the game
 
 const choiceRock = document.querySelector('#rock');
+const choicePaper = document.querySelector('#paper');
+const choiceScissors = document.querySelector('#scissors');
 
-function choice() {
-    alert('You chose Rock!')
+
+function getPlayersChoice1() {
+    let choice = choiceRock.addEventListener('click', getPlayersChoice1);
+    console.log('rock');
 }
 
-choiceRock.addEventListener('click', choice);
+function getPlayersChoice2() {
+    let choice = choicePaper.addEventListener('click', getPlayersChoice2);
+    console.log('paper');
+}
 
+function getPlayersChoice3() {
+    let choice = choiceScissors.addEventListener('click', getPlayersChoice3);
+    console.log('scissors');
+}
+
+
+
+console.log(getPlayersChoice1());
+console.log(getPlayersChoice2());
+console.log(getPlayersChoice3());
