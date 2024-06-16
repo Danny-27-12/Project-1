@@ -1,19 +1,15 @@
 
 //Get computer's choice 
 
-const options = ['rock', 'paper', 'scissors'];
+const options = ['Rock', 'Paper', 'Scissors'];
 
 function getComputerChoice() {
     let move = Math.floor(Math.random() * options.length);
-    return options[move];
+    let answer = options[move];
+    document.getElementById('display2').textContent = answer;
 }
+window.onload = getComputerChoice();
 
-//Get player's choice
-
-function getPlayersChoice() {
-    let choice = window.prompt('Please enter your go:');
-    return choice.toLowerCase();
-}
 
 let humanScore = 0;
 let computerScore = 0;
@@ -27,6 +23,7 @@ const choiceScissors = document.querySelector('#scissors');
 
 choiceRock.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Rock";
+    
 });
 
 choicePaper.addEventListener('click', function () {
