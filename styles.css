@@ -86,8 +86,6 @@ h2{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    
-    
 }
 
 #finalResult{
@@ -97,6 +95,5 @@ h2{
     flex-direction: column;
     font-size: 2em;
     margin-top: 40px;
-    
 }
 
