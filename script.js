@@ -3,24 +3,17 @@
 
 const options = ['Rock', 'Paper', 'Scissors'];
 
-/*function getComputerChoice() {
-    let move = Math.floor(Math.random() * options.length);
-    let answer = options[move];
-    document.getElementById('display2').textContent = answer;
-}
-window.onload = getComputerChoice();*/
-
-
 let humanScore = 0;
 let computerScore = 0;
 
 //Adding the UX to the game
-
+//
 
 const choiceRock = document.querySelector('#rock');
 const choicePaper = document.querySelector('#paper');
 const choiceScissors = document.querySelector('#scissors');
 
+function scoreRock(){
 choiceRock.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Rock";
 
@@ -28,8 +21,10 @@ choiceRock.addEventListener('click', function () {
         let answer = options[move];
         document.getElementById('display2').textContent = answer;
     
-});
+})};
+scoreRock();
 
+function scorePaper(){
 choicePaper.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Paper";
 
@@ -37,16 +32,19 @@ choicePaper.addEventListener('click', function () {
         let answer = options[move];
         document.getElementById('display2').textContent = answer;
 
-});
+})};
+scorePaper();
 
+function scoreScissors(){
 choiceScissors.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Scissors";
 
     let move = Math.floor(Math.random() * options.length);
         let answer = options[move];
         document.getElementById('display2').textContent = answer;
-        
-});
+
+})};
+scoreScissors();
 
 
 
