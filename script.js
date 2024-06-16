@@ -3,12 +3,12 @@
 
 const options = ['Rock', 'Paper', 'Scissors'];
 
-function getComputerChoice() {
+/*function getComputerChoice() {
     let move = Math.floor(Math.random() * options.length);
     let answer = options[move];
     document.getElementById('display2').textContent = answer;
 }
-window.onload = getComputerChoice();
+window.onload = getComputerChoice();*/
 
 
 let humanScore = 0;
@@ -23,18 +23,70 @@ const choiceScissors = document.querySelector('#scissors');
 
 choiceRock.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Rock";
+
+        let move = Math.floor(Math.random() * options.length);
+        let answer = options[move];
+        document.getElementById('display2').textContent = answer;
     
 });
 
 choicePaper.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Paper";
+
+        let move = Math.floor(Math.random() * options.length);
+        let answer = options[move];
+        document.getElementById('display2').textContent = answer;
+
 });
 
 choiceScissors.addEventListener('click', function () {
     document.getElementById('display1').textContent = "Scissors";
+
+    let move = Math.floor(Math.random() * options.length);
+        let answer = options[move];
+        document.getElementById('display2').textContent = answer;
+        
 });
 
 
+
+
+
+
+function playGame() {
+
+}
+
+
+
+
+/*
+function playGame() {
+    for (let round = 1; round <= 5; round++) {
+    let computerChoice = getComputerChoice();
+    let playerChoice = getPlayersChoice();
+
+    console.log(`Player's Choice: ${playerChoice} | Computer's Choice: ${computerChoice}`);
+
+    if (computerChoice === playerChoice) {
+        console.log("It's a tie!");
+    } else if (computerChoice === 'rock' && playerChoice === 'paper') {
+        humanScore ++
+        console.log ("Player wins, paper beats rock");
+    } else if (computerChoice === 'scissors' && playerChoice === 'rock') {
+        humanScore ++
+        console.log ("Player wins, rock beats scissors");
+    } else if (computerChoice === 'paper' && playerChoice === 'scissors') {
+        humanScore ++
+        console.log ("Player wins, scissors beats paper");
+    } else {
+        computerScore ++
+        console.log (`Computer wins, ${computerChoice} beats ${playerChoice}`);
+    }
+
+    console.log (`These are the scores: Player: ${humanScore} Computer ${computerScore}`);
+    console.log('------------------------------');
+*/
 
 
 
