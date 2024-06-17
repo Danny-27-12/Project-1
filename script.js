@@ -6,8 +6,6 @@ const options = ['Rock', 'Paper', 'Scissors'];
 let humanScore = 0;
 let computerScore = 0;
 
-
-
 //Adding the UX to the game
 
 const choiceRock = document.querySelector('#rock');
@@ -23,9 +21,8 @@ choiceRock.addEventListener('click', function () {
         document.getElementById('display2').textContent = answer;
 
         if ('Rock' === answer){
-            //console.log('Tie');
             humanScore++
-            console.log(humanScore);
+            console.log('Tie! You both chose Rock!');
         } 
 })};
 scoreRock();
@@ -38,6 +35,11 @@ choicePaper.addEventListener('click', function () {
         let answer = options[move];
         document.getElementById('display2').textContent = answer;
 
+        if ('Paper' === answer){
+            humanScore++
+            console.log('Tie! You both chose Paper!');
+        } 
+
 })};
 scorePaper();
 
@@ -49,25 +51,15 @@ choiceScissors.addEventListener('click', function () {
         let answer = options[move];
         document.getElementById('display2').textContent = answer;
 
+        if ('Scissors' === answer){
+            humanScore++
+            console.log('Tie! You both chose Scissors!');
+        } 
+
 })};
 scoreScissors();
 
 
-
-
-
-
-
-
-const winner = document.getElementById('#display1');
-
-function checkWinner(){
-if (winner === scoreRock()) {
-    console.log('true');
-}
-}
-
-checkWinner();
 
 
 

@@ -4,3 +4,10 @@
 4. Play a game
 5. Play 5 games 
 6. Display winner at the end
+
+
+
+- Add rounds counter (to track how many rounds are left to play)
+- add a score tracker to keep track of the player and computer's scores.
+- add a playGame function
+- declare a winner at the end
