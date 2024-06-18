@@ -28,7 +28,7 @@ choiceRock.addEventListener('click', function () {
             humanScore++;
             document.getElementById('box2').textContent = humanScore;
 
-        }})};
+}})};
 scoreRock();
 
 function scorePaper(){
@@ -47,7 +47,15 @@ choicePaper.addEventListener('click', function () {
             humanScore++;
             document.getElementById('box2').textContent = humanScore;
 
-        }})};
+                if (humanScore === 5) {
+                    document.getElementById('display4').textContent = 'Human!';
+                } else if (computerScore === 5) {
+                    document.getElementById('display4').textContent = 'Computer is the winner!';
+                } else {
+                    console.log('bum');
+                };
+
+}})};
 scorePaper();
 
 function scoreScissors(){
@@ -70,6 +78,14 @@ choiceScissors.addEventListener('click', function () {
 })};
 scoreScissors();
 
+
+/*function playGame(){
+    for (let round = 1; round <= 5; round++){
+        scoreRock();
+        scorePaper();
+        scoreScissors();
+    }
+}
 
 
 
