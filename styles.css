@@ -98,12 +98,13 @@ h2{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin: 10px 0;
 }
 
 .scoreTracker{
     display: flex;
     margin-top: 70px;
-    color: rgb(255, 191, 0);
+    color: white;
     font-weight: bold;
     margin-right: 35px;
 }
@@ -122,6 +123,7 @@ margin-top: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
+color: rgb(255, 191, 0);
 
 
 }
@@ -140,6 +142,8 @@ margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 191, 0);
+
 }
 
 .container-score{
