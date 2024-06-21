@@ -80,6 +80,9 @@ choiceScissors.addEventListener('click', function () {
 })};
 scoreScissors();
 
+
+// allows the winner to be declared at the end of the 5 rounds.
+
 function playGame(){
 if (humanScore === endScore) {
     document.getElementById('display4').textContent = 'Human!';
