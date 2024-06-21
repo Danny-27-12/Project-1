@@ -3,6 +3,8 @@ body{
     background-color: black;
     color: white;
     font-family:'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -163,5 +165,11 @@ margin-right: 5px;
     
 }
 
+#refresh{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    color: rgb(255, 191, 0);
+}
 
 

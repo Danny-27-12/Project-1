@@ -5,6 +5,9 @@ const options = ['Rock', 'Paper', 'Scissors'];
 
 let humanScore = 0;
 let computerScore = 0;
+let endScore = 5;
+
+
 
 //Adding the UX to the game
 
@@ -28,6 +31,8 @@ choiceRock.addEventListener('click', function () {
             humanScore++;
             document.getElementById('box2').textContent = humanScore;
 
+            playGame();
+
 }})};
 scoreRock();
 
@@ -47,14 +52,9 @@ choicePaper.addEventListener('click', function () {
             humanScore++;
             document.getElementById('box2').textContent = humanScore;
 
-                if (humanScore === 5) {
-                    document.getElementById('display4').textContent = 'Human!';
-                } else if (computerScore === 5) {
-                    document.getElementById('display4').textContent = 'Computer is the winner!';
-                } else {
-                    console.log('bum');
-                };
+            playGame();
 
+                
 }})};
 scorePaper();
 
@@ -75,29 +75,20 @@ choiceScissors.addEventListener('click', function () {
             document.getElementById('box2').textContent = humanScore;
         } 
 
+        playGame();
+
 })};
 scoreScissors();
 
+function playGame(){
+if (humanScore === endScore) {
+    document.getElementById('display4').textContent = 'Human!';
+    document.getElementById('refresh').textContent = 'Thank you for playing, please refresh the page and play again.';
+ } else if (computerScore === endScore) {
+    document.getElementById('display4').textContent = 'Computer';
+    document.getElementById('refresh').textContent = 'Thank you for playing, please refresh the page and play again.';
+ }};
 
-/*function playGame(){
-    for (let round = 1; round <= 5; round++){
-        scoreRock();
-        scorePaper();
-        scoreScissors();
-    }
-}
+ 
 
-
-
-
-
-
-
-
-/*
-function playGame() {
-    for (let round = 1; round <= 5; round++) {
-    let computerChoice = getComputerChoice();
-    let playerChoice = getPlayersChoice();
-*/
 
